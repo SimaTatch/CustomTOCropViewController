@@ -163,11 +163,11 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
     
     if (animated == NO) {
         for (UIView *lineView in self.horizontalGridLines) {
-            lineView.alpha = hidden ? 0.0f : 1.0f;
+            lineView.alpha = hidden ? 1.0f : 1.0f;
         }
         
         for (UIView *lineView in self.verticalGridLines) {
-            lineView.alpha = hidden ? 0.0f : 1.0f;
+            lineView.alpha = hidden ? 1.0f : 1.0f;
         }
     
         return;
@@ -175,10 +175,10 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
     
     [UIView animateWithDuration:hidden?0.35f:0.2f animations:^{
         for (UIView *lineView in self.horizontalGridLines)
-            lineView.alpha = hidden ? 0.0f : 1.0f;
+            lineView.alpha = hidden ? 1.0f : 1.0f;
         
         for (UIView *lineView in self.verticalGridLines)
-            lineView.alpha = hidden ? 0.0f : 1.0f;
+            lineView.alpha = hidden ? 1.0f : 1.0f;
     }];
 }
 
